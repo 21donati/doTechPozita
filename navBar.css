@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(24, 25, 22, 1);
+    height: 2000px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 119px;
+    position: fixed;
+    border-bottom: 0.1px;
+    border-bottom: 1px solid rgba(35, 45, 48, 1);
+    background-color: rgba(24, 25, 22, 1);
+}
+.left-navBar{
+    margin-top: 23px;
+    margin-left: 150px;
+}
+.navButtons{
+    background-color: rgba(24, 25, 22, 1);
+    border: none;
+    color: rgba(195, 212, 205, 1);
+    font-size: 16pt;
+    margin: 0px 6px;
+    margin-top: 22px;
+    font-family: 'IBM Plex Mono', monospace;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.navButtons:hover{
+    background-color: rgba(156, 170, 164, 0.05);
+}
+.sign-up{
+   background-color: rgba(195, 212, 205, 1);
+   border: none;
+   color: rgba(24, 25, 22, 1);
+   font-family: 'IBM Plex Mono', monospace;
+   font-size: 16pt;
+   padding: 8px 16px;
+   margin-top: 40px;
+   margin-right: 60px;
+   margin-left: 20px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+.sign-up:hover{
+    background-color: rgba(230, 246, 240, 1);
+}
+.log-in{
+    background: rgba(35, 45, 48, 1);
+    border: none;
+    color: rgba(234, 241, 235, 1);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16pt;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.log-in:hover{
+    background: rgba(49, 63, 67, 1);
+}

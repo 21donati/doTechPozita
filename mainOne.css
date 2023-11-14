@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-one{
+    display: flex;
+    padding-top: 120px;
+    
+}
+.main-one-left{
+    width: 700px;
+    margin-left: 150px;
+    padding-top: 210px;
+    margin-right: 230px;
+}
+.main-one-right{
+    margin-top: 50px;
+}
+.title{
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgba(234, 241, 235, 1);
+    font-weight: 500;
+    font-size: 40pt;
+    line-height: 52pt;
+    font-stretch: expanded;
+}
+.first-des{
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+    color: rgba(234, 241, 235, 1);
+    line-height: 26.38px;
+    width: 700px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.work{
+   background-color: rgba(195, 212, 205, 1);
+   border: none;
+   color: rgba(24, 25, 22, 1);
+   font-family: 'IBM Plex Mono', monospace;
+   font-size: 16pt;
+   padding: 8px 16px;
+   margin-right: 15px;
+   transition: background-color 0.3s;
+   cursor: pointer;
+}
+.work:hover{
+    background-color: rgba(230, 246, 240, 1);
+}
+.hire{
+    background: rgba(35, 45, 48, 1);
+    border: none;
+    color: rgba(234, 241, 235, 1);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16pt;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.hire:hover{
+    background: rgba(49, 63, 67, 1);
+}
+.first-main-photo{
+    width: 728px;
+    height: 630px;
+}
