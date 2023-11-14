@@ -14,6 +14,12 @@
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     margin-right: 15px;
+    color: rgba(195, 212, 205, 1);
+    
+}
+.your-email:active{
+    
+    border: none;
 }
 .sign-up-two{
     background-color: rgba(195, 212, 205, 1);
