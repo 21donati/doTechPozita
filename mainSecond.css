@@ -1,0 +1,99 @@
+.mainSecond{
+  display: flex;
+  margin-top: 150px;
+}
+.mainSecond-left{
+  width: 700px;
+  margin-left: 200px;
+  margin-right: 80px;
+}
+.mainSecond-right{
+  width: 800px;
+  padding: 20px;
+}
+.mainSecond-firstDes{
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  color: rgba(88, 163, 193, 1);
+  line-height: 26.38px;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+.mainSecond-secondDes{
+  font-size: 40px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: rgba(234, 241, 235, 1);
+  line-height: 52px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.mainSecond-thirdDes{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  line-height: 21.1px;
+  color: rgba(234, 241, 235, 1);
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.mainSecond-fourthDes{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  line-height: 21.1px;
+  color: rgba(234, 241, 235, 1);
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.mainSecond-fiveDes{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  line-height: 21.1px;
+  color: rgba(234, 241, 235, 1);
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.mainSecond-sixDes{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  line-height: 21.1px;
+  color: rgba(234, 241, 235, 1);
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+.mainSecond-signUp{
+  background-color: rgba(195, 212, 205, 1);
+  border: none;
+  color: rgba(24, 25, 22, 1);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16pt;
+  padding: 8px 16px;
+  margin-top: 40px;
+  margin-right: 60px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.mainSecond-signUp:hover{
+  background-color: rgba(230, 246, 240, 1);
+}
+.mainSecond-learnMore{
+  background: rgba(35, 45, 48, 1);
+  border: none;
+  color: rgba(234, 241, 235, 1);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16pt;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.mainSecond-learnMore:hover{
+  background: rgba(49, 63, 67, 1);
+}
+.mainSecond-blueText{
+  font-family: 'Roboto Slab', serif;
+  color: rgba(88, 163, 193, 1);
+}
+.mainSecond2{
+  display: flex;
+  padding-top: 100px;
+}

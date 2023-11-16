@@ -1,0 +1,57 @@
+.stats{
+  display: flex;
+  margin-top: 150px;
+}
+.statsOne{
+  margin-left: 140px;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom : 1px solid rgba(255, 255, 255, 1);
+  width: 550px;
+  height: 266px;
+  margin-right: 0.2px;
+}
+.statsTwo{
+  border: solid;
+  width: 550px;
+  height: 266px;
+  border-color: rgba(195, 212, 205, 1);
+  border-width: 1px;
+  margin-left: 0.2px;
+}
+.statsThree{
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom : 1px solid rgba(255, 255, 255, 1);
+  width: 550px;
+  height: 266px;
+}
+.titleStats{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52pt;
+  color: rgba(88, 163, 193, 1);
+  width: 96px;
+  padding-top: 90px;
+  padding-left: 220px;
+}
+.second-desStats{
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 22px;
+  padding-left: 200px;
+}
+.first-desStats{
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 22px;
+  padding-left: 224px;
+}
+.third-desStats{
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 22px;
+  padding-left: 210px;
+}
