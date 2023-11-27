@@ -76,3 +76,21 @@
     font-weight: 500;
     margin-top: 10px;
 }
+.secondNgushti{
+    
+    padding-top: 80px;
+}
+.secondNgushti1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: rgba(88, 163, 193, 1);
+    line-height: 26px;
+    padding-left: 850px;
+    padding-bottom: 15px;
+}
+.secondNgushti2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    color: rgba(234, 241, 235, 1);
+    padding-left: 750px;
+}

@@ -1,0 +1,63 @@
+.footer{
+    display: flex;
+    background-color: rgba(36, 37, 34, 1);
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.footer2-title{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    color: rgba(234, 241, 235, 1);
+    padding-bottom: 10px;
+}
+.footer2-comp{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: rgba(234, 241, 235, 1);
+    padding-bottom: 5px;
+}
+.footer3-title{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    color: rgba(234, 241, 235, 1);
+    padding-bottom: 20px;
+}
+.footer3-button{
+    background-color: rgba(195, 212, 205, 1);
+    border: none;
+    width: 52px;
+    height: 37px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+.footer3-button:hover{
+    background-color: rgba(230, 246, 240, 1);
+}
+.footer-email{
+    padding: 8px 16px;
+    width: 460px;
+    background-color: rgba(36, 37, 34, 1);
+    border: none;
+    border-bottom: 3px solid rgba(195, 212, 205, 1);
+    border-radius: 1px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: rgba(195, 212, 205, 1);
+}
+.footer-subscribe{
+    background-color: rgba(195, 212, 205, 1);
+    border: none;
+    color: rgba(24, 25, 22, 1);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16pt;
+    padding: 11px 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.footer-subscribe:hover{
+    background-color: rgba(230, 246, 240, 1);
+}

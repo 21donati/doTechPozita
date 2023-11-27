@@ -1,0 +1,26 @@
+.comments-part{
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+}
+.comment{
+    width: 480px;
+    height: 240px;
+    padding: 24px;
+    margin-right: 15px;
+    background: rgba(36, 37, 34, 1);
+}
+.comment-example{
+    font-size: 18px;
+    color: rgba(234, 241, 235, 1);
+    font-family: 'Roboto Slab', serif;
+    padding-top: 50px;
+
+}
+.comment-autor{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    color: rgba(234, 241, 235, 1);
+    text-align: right;
+    padding-top: 60px;
+}
