@@ -1,0 +1,130 @@
+p{
+    margin: 0;
+}
+.createAccount{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(24, 25, 22, 1);
+}
+.createAccount-left{
+    width: 50%;
+    padding-left: 100px;
+}
+.createAccount-right{
+    width: 50%;
+}
+.first-left{
+    height: 33%;
+    padding: 20px;
+}
+.createAccount-leftTitle{
+    width: 280px;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgba(234, 241, 235, 1);
+    padding-left: 310px;
+    padding-top: 40px;
+}
+.createAccount-leftDes{
+    font-size: 20px;
+    color: rgba(234, 241, 235, 1);
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    width: 330px;
+    padding-left: 280px;
+    padding-top: 15px;
+    font-weight: lighter;
+}
+.bottom-create-photo{
+    width: 100%;
+    height: 100%;
+}
+.createAccount-logo{
+    padding-left: 170px;
+    padding-bottom: 20px;
+}
+.createAccount-rightTitle{
+    font-size: 40px;
+    line-height: 52px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgba(234, 241, 235, 1);
+    padding-left: 90px;
+}
+.createAccount-rightDes{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgba(234, 241, 235, 1);
+    padding-left: 115px;
+    font-weight: lighter;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.createAccount-write{
+    padding: 8px 16px;
+    width: 460px;
+    background-color: rgba(24, 25, 22, 1);
+    border: none;
+    border-bottom: 3px solid rgba(195, 212, 205, 1);
+    border-radius: 1px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: rgba(195, 212, 205, 1);
+}
+.createAccount-input{
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgba(234, 241, 235, 1);
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 7px;
+}
+.createAccount-underDes1{
+    font-family: 'Roboto Slab', serif;
+    color: rgba(138, 138, 138, 1);
+    font-size: 14px;
+    width: 300px;
+}
+.createAccount-already{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(234, 241, 235, 1);
+    padding-left: 160px;
+    padding-top: 20px;
+}
+.createAccount-content{
+    width: 600px;
+    padding-top: 250px;
+    padding-left: 100px;
+}
+.createAccount-underDes2{
+    font-family: 'Roboto Slab', serif;
+    color: rgba(138, 138, 138, 1);
+    font-size: 14px;
+    width: 300px;
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.createAccount-button{
+    background-color: rgba(195, 212, 205, 1);
+   border: none;
+   color: rgba(24, 25, 22, 1);
+   font-family: 'IBM Plex Mono', monospace;
+   font-size: 16pt;
+   padding: 8px 16px;
+   margin-left: 150px;
+   margin-top: 20px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+.createAccount-button:hover{
+    background-color: rgba(230, 246, 240, 1);
+}
