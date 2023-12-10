@@ -1,0 +1,54 @@
+.greet{
+    padding-top: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.right-greet{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.left-greet{
+    padding-left: 150px;
+}
+.left-greet-title{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    line-height: 52px;
+}
+.left-greet-des{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+.right-greet-num{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    line-height: 52px;
+    color: rgba(88, 163, 193, 1);
+}
+.right-greet-des{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+.dropdown{
+    width: 260px;
+    height: 40px;
+    background-color: rgba(32, 39, 33, 1);
+    color: rgba(234, 241, 235, 1);
+    font-family: 'IBM Plex Mono', monospace;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dropdown-list{
+    padding-left: 140px;
+    padding-top: 40px;
+}
+.dropdown:hover{
+    background-color: rgba(41, 44, 41, 1);
+}
