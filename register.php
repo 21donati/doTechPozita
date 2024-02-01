@@ -47,24 +47,24 @@ $conn->close();
     <link rel="stylesheet" href="createAccount.css">
 </head>
 <body>
-    form
+   
     <div class="createAccount">
         <div class="createAccount-left">
             <div class="first-left">
-               <img src="/photos/undraw_product_iteration_kjok.svg" class="bottom-create-photo">
+               <img src="undraw_product_iteration_kjok.svg" class="bottom-create-photo">
             </div>
             <div class="first-left-text">
                 <p class="createAccount-leftTitle">Find the job made for you.</p>
                 <p class="createAccount-leftDes">Browse over 130K jobs at top companies and fast-growing startups.</p>
             </div>
             <div class="first-left">
-                <img src="/photos/undraw_photo_session_re_c0cp.svg" class="bottom-create-photo">
+                <img src="undraw_photo_session_re_c0cp.svg" class="bottom-create-photo">
             </div>
         </div>
         <form action="register.php" method="post" onsubmit="return validateForm()">
         <div class="createAccount-right">
             <div class="createAccount-content">
-                <img src="/photos/Techpozita_Logo.svg" class="createAccount-logo">
+                <img src="Techpozita_Logo.svg" class="createAccount-logo">
                 <p class="createAccount-rightTitle">Create Accouunt</p>
                 <p class="createAccount-rightDes">Discover your next venture</p>
                 <p class="createAccount-input">Full Name</p>
@@ -80,7 +80,7 @@ $conn->close();
             </select>
                 <button class="createAccount-button" type="Submit">Create Account</button>
                 <p class="createAccount-underDes2">By continuing you accept our standard terms and conditions and our privacy policy</p>
-                <p class="createAccount-already">Already a member? <u>Log In</u></p>
+                <p class="createAccount-already">Already a member? <a href="login.php"><u>Log In</u></p></a> 
             </div>
         </div>
 </form>

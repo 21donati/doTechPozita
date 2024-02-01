@@ -41,7 +41,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
      }
  } else {
 
-     echo "Përdoruesi nuk ekziston. <a href='register.php'>Regjistrohu këtu</a>.";
+     
  }
 }
 $conn->close();
@@ -59,7 +59,7 @@ $conn->close();
     <div class="logIn">
         <div class="left-logIn">
         <div class="logIn-content">
-            <img src="/photos/Techpozita_Logo.svg" class="logIn-logo">
+            <img src="Techpozita_Logo.svg" class="logIn-logo">
             <p class="logIn-title">Log in</p>
             <p class="logIn-des">Discover your next venture</p>
             <button class="logIn-google">Log in with Google</button>
@@ -77,7 +77,7 @@ $conn->close();
         </div>
         </div>
         <div class="right-logIn">
-            <img src="/photos/undraw_selectoption_y9cm.svg" class="logIn-right-photo">
+            <img src="undraw_selectoption_y9cm.svg" class="logIn-right-photo">
             <p class="logIn-right-title">Find the job made for you.</p>
             <p class="logIn-right-des">Browse over 130K jobs at top companies and fast growing</p>
         </div>

@@ -15,17 +15,18 @@
 <body>
     <div class="navBar">
         <div class="left-navBar">
-            <img src="photos/Techpozita_Logo.svg" alt="">
+            <img src="Techpozita_Logo.svg" alt="">
         </div>
         <div class="center-navBar">
+        <a href="index.php"><button class="navButtons">Home</button></a>
             <button class="navButtons">Jobs</button>
             <button class="navButtons">Discover</button>
-            <a href="jobseekers.html"><button class="navButtons">For Jobseekers</button></a>
-            <a href="recruiters.html"><button class="navButtons">For Recruiters</button></a>
+            <a href="jobseekers.php"><button class="navButtons">For Jobseekers</button></a>
+            <a href="recruiters.php"><button class="navButtons">For Recruiters</button></a>
         </div>
         <div class="right-navBar">
-            <a href="login.html"><button class="log-in">Log In</button></a>
-            <a href="/createAccount.html"><button class="sign-up">Sign Up</button></a>
+            <a href="login.php"><button class="log-in">Log In</button></a>
+            <a href="register.php"><button class="sign-up">Sign Up</button></a>
         </div>
     </div>
 
@@ -41,17 +42,17 @@
             </div>
         </div >
         <div class="main-one-right">
-            <img src="/photos/undraw_to_the_moon.svg" class="first-main-photo">
+            <img src="undraw_to_the_moon.svg" class="first-main-photo">
         </div>
     </div>
 
     <div class="ngushti">
         <input type="email" placeholder="Your email" class="your-email">
-        <button class="sign-up-two">Sign Up</button>
+        <a href="register.php"><button class="sign-up-two">Sign Up</button></a>
         <p class="or">or</p>
         <button class="signup-google">Sign Up with Google</button>
         <button class="signup-linkedin">Sign Up with LinkedIn</button>
-        <p class="already">Already have an account? <span><u>Log in</u></span></p>
+        <p class="already">Already have an account? <a href="login.php"><span><u>Log in</u></span></p></a>
     </div>
     <div class="stats">
         <div class="statsOne">
@@ -69,7 +70,7 @@
     </div>
 
     <div class="mainSecond">
-        <div class="mainSecond-left"><img src="/photos/undraw_to_the_moon.svg"></div>
+        <div class="mainSecond-left"><img src="undraw_to_the_moon.svg"></div>
         <div class="mainSecond-right">
             <p class="mainSecond-firstDes">Got talent?</p>
             <p class="mainSecond-secondDes">Why Jobseekers come here</p>
@@ -78,7 +79,7 @@
             <p class="mainSecond-fiveDes">Everything you need to know to job search - including seeing <span class="mainSecond-blueText">salary</span> and <span class="mainSecond-blueText">skills needed</span> upfront when looking</p>
             <p class="mainSecond-sixDes">Connect directly with staff at top startups - no third party recruiters allowed</p>
             <button class="mainSecond-learnMore">Learn more</button>
-            <button class="mainSecond-signUp">Sign Up </button>
+            <a href="register.php"><button class="mainSecond-signUp">Sign Up </button></a>
         </div>
     </div>
 
@@ -91,9 +92,9 @@
             <p class="mainSecond-fiveDes">A free applicant tracking system, to make your recruitment process <span class="mainSecond-blueText"> fast</span> and <span class="mainSecond-blueText">efficient</span></p>
             <p class="mainSecond-sixDes">We can do the vetting for you! We review the world's top tech talent and highlight candidates directly to you <span class="mainSecond-blueText">twice a week</span></p>
             <button class="mainSecond-learnMore">Learn more</button>
-            <a href="/createAccount.html"><button class="mainSecond-signUp">Sign Up </button></a>
+            <a href="register.php"><button class="mainSecond-signUp">Sign Up </button></a>
         </div>
-        <div class="mainSecond-right"><img src="/photos/third-main-photo.svg" alt=""></div>
+        <div class="mainSecond-right"><img src="third-main-photo.svg" alt=""></div>
     </div>
 
     <div class="secondNgushti">
@@ -103,41 +104,41 @@
 
     <div class="comments-part">
         <div class="comment">
-            <img src="/photos/quotation.svg">
+            <img src="quotation.svg">
             <p class="comment-example">I got my tech job on Techpozita 4 years ago and I'm still happy! Pays well, great culture, and unlimited PTO.</p>
             <p class="comment-autor">- Curtis Crowe, Product Designer</p>
         </div>
         <div class="comment">
-            <img src="/photos/quotation.svg">
+            <img src="quotation.svg">
             <p class="comment-example">I love Techpozita. I got my current job at a startup entirely through the site last year - it's super easy to use and I love the UI.</p>
             <p class="comment-autor">- C. Deese Bauss, UI/UX Designer</p>
         </div>
         <div class="comment">
-            <img src="/photos/quotation.svg">
+            <img src="quotation.svg">
             <p class="comment-example">I can't imagine my day to day without this platform. Life would be a lot more difficult.</p>
             <p class="comment-autor">- June Smith, Web Engineer</p>
         </div>
     </div>
     <div class="comments-part">
         <div class="comment">
-            <img src="/photos/quotation.svg">
+            <img src="quotation.svg">
             <p class="comment-example">Half of the offers I give are sourced from Techpozita. It's the best product for anyone looking for startup talent.</p>
             <p class="comment-autor">- Reece Adams, InnovaTech Recruiter</p>
         </div>
         <div class="comment">
-            <img src="/photos/quotation.svg">
+            <img src="quotation.svg">
             <p class="comment-example">Techpozita has completely transformed our hiring process. We've found exceptional candidates with precisely the skills we need.</p>
             <p class="comment-autor">- Blake Griffin, Metadata CEO</p>
         </div>
         <div class="comment">
-            <img src="/photos/quotation.svg">
+            <img src="quotation.svg">
             <p class="comment-example">Techpozita opened doors to exciting opportunities that fit my goals perfectly.</p>
             <p class="comment-autor">- Randuin Owens, Software Engineer</p>
         </div>
     </div>
 
     <div class="footer">
-        <div class="footer1"><img src="/photos/Techpozita_Logo.svg"></div>
+        <div class="footer1"><img src="Techpozita_Logo.svg"></div>
         <div class="footer2">
             <p class="footer2-title">Site Map</p>
             <p class="footer2-comp">Jobs</p>
