@@ -1,3 +1,43 @@
+<?php
+session_start();
+
+$servername = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbname = "techpozitadb";
+
+$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
+
+if ($conn->connect_error) {
+    die("Lidhja me bazën e të dhënave ka dështuar: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    $role = $_POST["role"];
+
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+    if ($role == "admin") {
+        $insertAdminQuery = "INSERT INTO admin (username, password, role) VALUES ('$username', '$hashedPassword', '$role')";
+        if ($conn->query($insertAdminQuery) === TRUE) {
+            echo "Regjistrimi i adminit u krye me sukses!";
+        } else {
+            echo "Gabim gjatë regjistrimit të adminit: " . $conn->error;
+        }
+    } else {
+        $insertUserQuery = "INSERT INTO users (username, password, role) VALUES ('$username', '$hashedPassword', '$role')";
+        if ($conn->query($insertUserQuery) === TRUE) {
+            echo "Regjistrimi i përdoruesit u krye me sukses!";
+        } else {
+            echo "Gabim gjatë regjistrimit të përdoruesit: " . $conn->error;
+        }
+    }
+}
+
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +47,7 @@
     <link rel="stylesheet" href="createAccount.css">
 </head>
 <body>
+    form
     <div class="createAccount">
         <div class="createAccount-left">
             <div class="first-left">
@@ -20,23 +61,29 @@
                 <img src="/photos/undraw_photo_session_re_c0cp.svg" class="bottom-create-photo">
             </div>
         </div>
+        <form action="register.php" method="post" onsubmit="return validateForm()">
         <div class="createAccount-right">
             <div class="createAccount-content">
                 <img src="/photos/Techpozita_Logo.svg" class="createAccount-logo">
                 <p class="createAccount-rightTitle">Create Accouunt</p>
                 <p class="createAccount-rightDes">Discover your next venture</p>
                 <p class="createAccount-input">Full Name</p>
-                <input type="name" placeholder="Write your full name" class="createAccount-write">
+                <input type="name" placeholder="Write your full name" class="createAccount-write" name="username" id="username">
                 <p class="createAccount-input">Email</p>
                 <input type="email" placeholder="Write your email" class="createAccount-write">
                 <p class="createAccount-input">Password</p>
-                <input type="password" placeholder="Write your password" class="createAccount-write">
+                <input type="password" placeholder="Write your password" class="createAccount-write" name="password" id="password">
                 <p class="createAccount-underDes1">Minimum of 8 characters</p>
-                <button class="createAccount-button">Create Account</button>
+                <select id="role" name="role">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+            </select>
+                <button class="createAccount-button" type="Submit">Create Account</button>
                 <p class="createAccount-underDes2">By continuing you accept our standard terms and conditions and our privacy policy</p>
                 <p class="createAccount-already">Already a member? <u>Log In</u></p>
             </div>
         </div>
+</form>
     </div>
 
     <script>
