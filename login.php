@@ -65,8 +65,8 @@ $conn->close();
             <button class="logIn-google">Log in with Google</button>
             <p class="or">or</p>
             <form action="login.php" method="post" onsubmit="">
-                <label  for="inputEmail" class="label-email">Full Name</label>
-                <input type="email"  placeholder="Write your Full Name" class="input-email" name="username" id="username">
+                <label  for="inputEmail" class="label-email">Email</label>
+                <input type="email"  placeholder="Write your Email" class="input-email" name="username" id="username">
                 <label for="inputPassword" class="label-password">Password</label>
                 <input type="password"  placeholder="Write your password" class="input-password" id="password" name="password">
                 <p class="forgot-password"><u>Forgot password?</u></p>
