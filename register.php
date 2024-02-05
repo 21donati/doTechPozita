@@ -22,14 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($role == "admin") {
         $insertAdminQuery = "INSERT INTO admin (username, password, role) VALUES ('$username', '$hashedPassword', '$role')";
         if ($conn->query($insertAdminQuery) === TRUE) {
-            echo "Regjistrimi i adminit u krye me sukses!";
+            header("Location: admin_dashboard.php");
         } else {
             echo "Gabim gjatë regjistrimit të adminit: " . $conn->error;
         }
     } else {
         $insertUserQuery = "INSERT INTO users (username, password, role) VALUES ('$username', '$hashedPassword', '$role')";
         if ($conn->query($insertUserQuery) === TRUE) {
-            echo "Regjistrimi i përdoruesit u krye me sukses!";
+            header("Location: jobs.php");
         } else {
             echo "Gabim gjatë regjistrimit të përdoruesit: " . $conn->error;
         }
@@ -61,63 +61,72 @@ $conn->close();
                 <img src="undraw_photo_session_re_c0cp.svg" class="bottom-create-photo">
             </div>
         </div>
-        <form action="register.php" method="post" onsubmit="return validateForm()">
-        <div class="createAccount-right">
-            <div class="createAccount-content">
-                <img src="Techpozita_Logo.svg" class="createAccount-logo">
-                <p class="createAccount-rightTitle">Create Accouunt</p>
-                <p class="createAccount-rightDes">Discover your next venture</p>
-                <p class="createAccount-input">Full Name</p>
-                <input type="name" placeholder="Write your full name" class="createAccount-write" name="username" id="username">
-                <p class="createAccount-input">Email</p>
-                <input type="email" placeholder="Write your email" class="createAccount-write">
-                <p class="createAccount-input">Password</p>
-                <input type="password" placeholder="Write your password" class="createAccount-write" name="password" id="password">
-                <p class="createAccount-underDes1">Minimum of 8 characters</p>
-                <select id="role" name="role">
-            <option value="admin">Admin</option>
-            <option value="user">User</option>
-            </select>
-                <button class="createAccount-button" type="Submit">Create Account</button>
-                <p class="createAccount-underDes2">By continuing you accept our standard terms and conditions and our privacy policy</p>
+                    <form action="register.php" method="post" onsubmit="return validateForm()">
+                <div class="createAccount-right">
+                    <div class="createAccount-content">
+                        <img src="Techpozita_Logo.svg" class="createAccount-logo">
+                        <p class="createAccount-rightTitle">Create Account</p>
+                        <p class="createAccount-rightDes">Discover your next venture</p>
+                        
+                        <p class="createAccount-input">Email</p>
+                        <input type="email" placeholder="Write your Email" class="createAccount-write" name="username" id="username">
+                        <p id="emailError" class="error"></p>
+                        
+                        <p class="createAccount-input">Password</p>
+                        <input type="password" placeholder="Write your password" class="createAccount-write" name="password" id="password">
+                        <p id="passwordError" class="error"></p>
+                        <p class="createAccount-underDes1">Minimum of 8 characters</p>
+                        
+                        <p class="createAccount-input">Role</p>
+                        <select id="role" name="role">
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+                        </select>
+                        
+                        <p id="roleError" class="error"></p>
+
+                        <button class="createAccount-button" type="submit">Create Account</button>
+                        <p class="createAccount-underDes2">By continuing you accept our standard terms and conditions and our privacy policy</p>
                 <p class="createAccount-already">Already a member? <a href="login.php"><u>Log In</u></p></a> 
+                    </div>
+                </div>
+            </form>
+                
             </div>
         </div>
 </form>
     </div>
 
     <script>
-        function validateForm() {
-            
-            document.getElementById("signupNameError").innerHTML = "";
-            document.getElementById("signupEmailError").innerHTML = "";
-            document.getElementById("signupPasswordError").innerHTML = "";
-    
-            var fullName = document.getElementById("createAccount-fullname").value;
-            var email = document.getElementById("createAccount-email").value;
-            var password = document.getElementById("createAccount-password").value;
+    function validateForm() {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+        var passwordRegex = /^.{8,}$/; 
 
-            var fullnameRegex = /^[a-z ,.'-]+$/i;
-            if (fullName === "" || !fullnameRegex.test(fullName)) {
-                document.getElementById("signupNameError").innerHTML = "Please enter your full name.";
-                return false;
-            }
+        var emailInput = document.getElementById("username");
+        var passwordInput = document.getElementById("password");
 
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (email === "" || !emailRegex.test(email)) {
-                document.getElementById("signupEmailError").innerHTML = "Please enter a valid email address.";
-                return false;
-            }
-            
-            if (password.length < 8) {
-                document.getElementById("signupPasswordError").innerHTML = "Password must be at least 8 characters long.";
-                return false;
-            }
-    
-            window.location.href = 'jobs.html';
-            return true;
+       
+        document.getElementById("emailError").innerText = "";
+        document.getElementById("passwordError").innerText = "";
+        document.getElementById("roleError").innerText = "";
 
+       
+        if (!emailRegex.test(emailInput.value)) {
+            document.getElementById("emailError").innerText = "Please enter a valid email address.";
+            return false;
         }
-    </script>
+
+    
+        if (!passwordRegex.test(passwordInput.value)) {
+            document.getElementById("passwordError").innerText = "Please enter a password with at least 8 characters.";
+            return false;
+        }
+
+       
+
+    s
+        return true;
+    }
+</script>
 </body>
 </html>

@@ -73,7 +73,7 @@ $conn->close();
                 <button class="logIn-button" type="submit">Log In</button>
             </form>
              
-            <p class="logIn-create">Not registered? <span class="logIn-create-blue"><u>Create an Account</u></span></p>
+            <p class="logIn-create">Not registered? <a href="register.php"><span class="logIn-create-blue"><u>Create an Account</u></span></p></a>
         </div>
         </div>
         <div class="right-logIn">

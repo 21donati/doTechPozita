@@ -128,3 +128,6 @@ p{
 .createAccount-button:hover{
     background-color: rgba(230, 246, 240, 1);
 }
+.error{
+    color: rgba(230, 246, 240, 1);
+}
